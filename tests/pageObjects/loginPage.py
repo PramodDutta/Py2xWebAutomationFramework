@@ -56,6 +56,13 @@ class LoginPage:
         self.get_username().send_keys(usr)
         self.get_password().send_keys(pwd)
         self.get_submit_button().click()
+
+
+    def login_to_vwo(self, usr, pwd, iserror):
+        if iserror is True
+            self.get_username().send_keys("wrong")
+            self.get_password().send_keys("wrong")
+            self.get_submit_button().click()
     
     def get_error_message_text(self):
         return self.get_error_message().text
